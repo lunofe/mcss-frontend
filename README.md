@@ -11,8 +11,8 @@ This script is designed to be used in a GitHub workflow or action to generate a 
 6. The content is divided into active and inactive sections, and IDs are added to anchor tags for direct linking.
 7. Finally, the generated HTML files are written to the build directory.
 
-## Requirements
-- Python 3.11
+## Dependencies
+- Python 3.10+
 - BeautifulSoup4
 - Markdown
 

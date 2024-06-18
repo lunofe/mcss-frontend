@@ -14,6 +14,7 @@ pages = {
     "java-hybrid": "java/MODS+PLUGINS.md",
     "java-proxies": "java/PROXIES.md",
     "java-regionized": "java/FOLIA.md",
+    "java-limbo": "java/LIMBO.md",
     "bedrock-vanilla": "bedrock/VANILLA.md",
     "bedrock-plugins": "bedrock/PLUGINS.md",
     "bedrock-proxies": "bedrock/PROXIES.md",

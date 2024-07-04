@@ -1,6 +1,5 @@
-# ![Minecraft Server Softwares Frontend](https://raw.githubusercontent.com/lunofe/mcss-frontend/HEAD/.github/mcss-frontend.svg)
-
-This script is designed to be used in a GitHub workflow or action to generate a static website from [`LeStegii/server-softwares`](https://github.com/LeStegii/server-softwares)' Markdown files. The generated website uses the Pico CSS library to provide a clean and modern look.
+# Minecraft Server Software Frontend
+This script is designed to be used in a GitHub workflow or action to generate a static website from [`LeStegii/server-software`](https://github.com/LeStegii/server-software)' Markdown files. The generated website uses the Pico CSS library to provide a clean and modern look.
 
 ## Functionality
 1. The webpages and their assignment to specific Markdown files are defined.
@@ -17,7 +16,7 @@ This script is designed to be used in a GitHub workflow or action to generate a 
 - Markdown
 
 ## Set up development environment
-1. Clone [`LeStegii/server-softwares`](https://github.com/LeStegii/server-softwares)
-2. Clone this repository into `sever-softwares/mcss-frontend` directory
+1. Clone [`LeStegii/server-software`](https://github.com/LeStegii/server-software)
+2. Clone this repository into `sever-software/mcss-frontend` directory
 3. `pip install markdown beautifulsoup4`
-4. Run `python mcss-frontend/build.py` (your working directory needs to be `server-softwares`) to generate the website
+4. Run `python mcss-frontend/build.py` (your working directory needs to be `server-software`) to generate the website

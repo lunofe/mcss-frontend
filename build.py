@@ -18,6 +18,7 @@ pages = {
     "bedrock-vanilla": "bedrock/VANILLA.md",
     "bedrock-plugins": "bedrock/PLUGINS.md",
     "bedrock-proxies": "bedrock/PROXIES.md",
+    "lost": "LOST.md",
     "miscellaneous": "OTHERS.md"
 }
 

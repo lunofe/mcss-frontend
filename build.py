@@ -18,7 +18,6 @@ pages = {
     "bedrock-vanilla": "bedrock/VANILLA.md",
     "bedrock-plugins": "bedrock/PLUGINS.md",
     "bedrock-proxies": "bedrock/PROXIES.md",
-    "lost": "LOST.md",
     "miscellaneous": "OTHERS.md"
 }
 
@@ -69,3 +68,11 @@ for page in pages:
     # Write to file
     with open(f"mcss-frontend/build/{page}/index.html", "w") as f:
         f.write(header.format(path="../") + catalog.format(title=page.replace("-", " ").title(), active="".join(active), inactive="".join(inactive), hide_start="<!--" if len(inactive) == 0 else "", hide_end="-->" if len(inactive) == 0 else "") + footer)
+
+# Build lost page
+os.makedirs(f"mcss-frontend/build/lost", exist_ok=True)
+with open("mcss-frontend/build/lost/index.html", "w") as f:
+    with open("LOST.md", "r") as g:
+        content = g.read().replace("###", "#####").replace("-->", "➜").replace("⚠️ **Warning!**", "ℹ️ ")
+        lost = [item.replace("class='warning'", "class='note'") if "h5" not in item else item for item in [f"<article class='warning'>{markdown.markdown(item)}</article>" for item in content.split("This list contains lost server software.")[1].split("\n\n") if item and item != "\n"]]
+    f.write(header.format(path="../") + catalog.format(title="Lost", active="", inactive="".join(lost), hide_start="", hide_end="") + footer)
